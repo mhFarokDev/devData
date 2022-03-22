@@ -1,0 +1,8 @@
+====== Get Form Data by form data object ======
+-> add input tag name
+-> call FormData(e.target) (pass all targeted data)
+-> call object.fromEntries(passFormData.entries())
+
+===== for checkbox to select multipol data add name like (food[]) ====
+
+==> reset()

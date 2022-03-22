@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+  
+</head>
+<body>
+    <div class="container">
+        <div class="submitForm">
+            <div class="row">
+                <div class="col-md-6 mx-auto mt-5">
+                    <div class="card shadow" >
+                      <div class="card-body">
+                        <h5 class="card-title">Add New User.</h5>
+                        <div class="showAlrt"></div>
+                        <form action="post" id="addUserForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name*</label>
+                                <input type="text" class="form-control" name="name" id="name" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="call" class="form-label">Call*</label>
+                                <input type="text" class="form-control" name="call" id="call" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="location" class="form-label">Location*</label>
+                                <input type="text" class="form-control" name="location" id="location" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="Photo" class="form-label">Photo url*</label>
+                                <input type="text" class="form-control" name="Photo" id="Photo" >
+                            </div>
+                            <input type="submit" class="btn btn-primary w-100" value="Add User">
+                        </form>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Show Developers List -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto mt-5">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <td>#</td>
+                            <td>Name</td>
+                            <td>Call</td>
+                            <td>Location</td>
+                            <td>Photo</td>
+                            <td>Action</td>
+                        </tr>
+                    </thead>
+                    <tbody id="devsListShow">
+                            
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
